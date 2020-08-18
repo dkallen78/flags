@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>
+    </title>
+    <link rel="stylesheet" type="text/css" href="eulerStyle.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      :root {
+        --flag-margin: 5vw;
+        --flag-ratio: calc(5 / 8);
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        background-image: linear-gradient(to right, black, gray);
+      }
+
+      #deets {
+        display: none;
+        position: absolute;
+        z-index: 2;
+      }
+
+      #flagBox:hover #deets {
+        display: block;
+      }
+
+      #flagBox {
+        position: relative;
+        max-height: calc(100vh - var(--flag-margin));
+        max-width: calc((100vh - var(--flag-margin)) + ((100vh - var(--flag-margin)) / 2));
+        width: calc(100vw - var(--flag-margin));
+        height: calc((100vw - var(--flag-margin)) - ((100vw - var(--flag-margin)) / 3));
+        background-color: rgb(255, 0, 0);
+      }
+
+      #whiteBand {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(255,255,255);
+      }
+
+      #chevron {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        background-color: blue;
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="flagBox">
+      <div id="deets">
+        Czechia<br />
+        2:3<br />
+        Red: rgb(255, 0, 0)<br />
+        Blue: rgb(0, 0, 255)<br />
+        White: rgb(255, 255, 255)
+      </div>
+      <div id="whiteBand">
+      </div>
+      <div id="chevron">
+      </div>
+    </div>
+  </body>
+  <script>
+
+  </script>
+</html>

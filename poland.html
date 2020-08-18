@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>
+    </title>
+    <link rel="stylesheet" type="text/css" href="eulerStyle.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      :root {
+        --flag-margin: 5vw;
+        --flag-ratio: calc(5 / 8);
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        background-image: linear-gradient(to right, black, gray);
+      }
+
+      #deets {
+        display: none;
+        position: absolute;
+      }
+
+      #flagBox:hover #deets {
+        display: block;
+      }
+
+      #flagBox {
+        max-height: calc(100vh - var(--flag-margin));
+        max-width: calc((100vh - var(--flag-margin)) * 1.6);
+        width: calc(100vw - var(--flag-margin));
+        height: calc((100vw - var(--flag-margin)) * var(--flag-ratio));
+        background-color: rgb(199, 84, 77);
+      }
+
+      #whiteBand {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(231, 244, 255);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="flagBox">
+      <div id="deets">
+        Poland<br />
+        5:8<br />
+        Red: rgb(199, 84, 77)<br />
+        White: rgb(231, 244, 255)
+      </div>
+      <div id="whiteBand">
+      </div>
+    </div>
+  </body>
+  <script>
+
+  </script>
+</html>
