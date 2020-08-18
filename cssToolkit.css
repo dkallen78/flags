@@ -23,29 +23,6 @@ body {
   display: block;
 }
 
-/*
-2:3*/
-#flagBox1 {
-  position: relative;
-  max-height: calc(100vh - var(--flag-margin));
-  max-width: calc((100vh - var(--flag-margin)) + ((100vh - var(--flag-margin)) / 2));
-  width: calc(100vw - var(--flag-margin));
-  height: calc((100vw - var(--flag-margin)) - ((100vw - var(--flag-margin)) / 3));
-  background-color: rgb(0, 151, 57);
-}
-
-/*
-1:2*/
-#flagBox2 {
-  position: relative;
-  max-height: calc(100vh - var(--flag-margin));
-  max-width: calc((100vh - var(--flag-margin)) * 2);
-  width: calc(100vw - var(--flag-margin));
-  height: calc((100vw - var(--flag-margin)) / 2);
-  background-color: rgb(0, 125, 140);
-}
-
-
 #star {
   position: absolute;
   clip-path: polygon(50% 0%, 61% 35%,
