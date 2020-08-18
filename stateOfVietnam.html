@@ -10,6 +10,8 @@
 
       :root {
         --flag-margin: 5vw;
+        --flag-height: 2;
+        --flag-width: 3;
       }
 
       body {
@@ -40,9 +42,9 @@
       #flagBox {
         position: relative;
         max-height: calc(100vh - var(--flag-margin));
-        max-width: calc((100vh - var(--flag-margin)) + ((100vh - var(--flag-margin)) / 2));
+        max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
-        height: calc((100vw - var(--flag-margin)) - ((100vw - var(--flag-margin)) / 3));
+        height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
         background-color: rgb(255, 255, 0);
       }
 
@@ -79,8 +81,8 @@
       <div id="deets">
         State of Vietnam<br />
         2:3<br />
-        Blue: rgb(0, 76, 152)<br />
-        White: rgb(255, 255, 255)
+        Yellow: rgb(255, 255, 255)<br />
+        Red: rgb(218, 37, 29)
       </div>
       <div id="bigRed">
       </div>

@@ -10,6 +10,8 @@
 
       :root {
         --flag-margin: 5vw;
+        --flag-height: 2;
+        --flag-width: 3;
       }
 
       body {
@@ -40,9 +42,9 @@
       #flagBox {
         position: relative;
         max-height: calc(100vh - var(--flag-margin));
-        max-width: calc((100vh - var(--flag-margin)) + ((100vh - var(--flag-margin)) / 2));
+        max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
-        height: calc((100vw - var(--flag-margin)) - ((100vw - var(--flag-margin)) / 3));
+        height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
         background-color: rgb(200, 16, 46);
       }
 
