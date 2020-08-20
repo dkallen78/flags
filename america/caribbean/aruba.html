@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>
-      Algeria
+      Aruba
     </title>
     <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -45,43 +45,49 @@
         max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
         height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(87, 138, 214);
       }
 
       #flagBox > * {
         position: absolute;
       }
 
-      #greenBar {
-        height: 100%;
-        width: 50%;
-        background-color: rgb(0, 114, 41);
+      #yellow1 {
+        top: calc(100% * (12 / 18));
+        height: calc(100% * (1 / 18));
+        width: 100%;
+        background-color: rgb(255, 209, 0);
       }
 
-      #redCrescent {
-        top: calc(100% * (5 / 20));
-        left: calc(100% * (10 / 30));
-        height: calc(100% * (10 / 20));
-        width: calc(100% * (10 / 30));
-        border-radius: 50%;
-        background-color: rgb(210, 16, 52);
-        mask-image: radial-gradient(circle closest-side at 60.2076%,
-                                    transparent 105.47%,
-                                    rgb(0, 0, 0) 106%);
+      #yellow2 {
+        top: calc(100% * (14 / 18));
+        height: calc(100% * (1 / 18));
+        width: 100%;
+        background-color: rgb(255, 209, 0);
+      }
+
+      #whiteStar {
+        top: calc(100% * (1 / 18));
+        left: calc(100% * (1 / 27));
+        height: calc(100% * (6 / 18));
+        width: calc(100% * (6 / 27));
+        clip-path: polygon(0% 50%, 38.215% 38.215%,
+                            50% 0%, 61.785% 38.215%,
+                            100% 50%, 61.785% 61.785%,
+                            50% 100%, 38.215% 61.785%);
+        background-color: rgb(255, 255, 255);
       }
 
       #redStar {
-        top: calc(100% * (7.5 / 20));
-        left: calc(100% * (14.522 / 30));
-        height: calc(100% * (5 / 20));
-        width: calc(100% * (5 / 30));
-        clip-path: polygon(50% 0%, 61% 35%,
-                            98% 35%, 68% 57%,
-                            79% 91%, 50% 70%,
-                            21% 91%, 32% 57%,
-                            2% 35%, 39% 35%);
-        background-color: rgb(210, 16, 52);
-        transform: rotateZ(90deg);
+        top: calc(100% * (1.75 / 18));
+        left: calc(100% * (1.75 / 27));
+        height: calc(100% * (4.5 / 18));
+        width: calc(100% * (4.5 / 27));
+        clip-path: polygon(0% 50%, 38.215% 38.215%,
+                            50% 0%, 61.785% 38.215%,
+                            100% 50%, 61.785% 61.785%,
+                            50% 100%, 38.215% 61.785%);
+        background-color: rgb(200, 16, 46);
       }
 
     </style>
@@ -89,19 +95,21 @@
   <body>
     <div id="flagBox">
       <div id="deets">
-        Algeria<br />
+        Aruba<br />
         2:3<br />
-        Green: rgb(0, 114, 41)<br />
-        Red: rgb(210, 16, 52)<br />
-        White: rgb(255, 255, 255)
+        Blue: rgb(87, 138, 214)<br />
+        Yellow: rgb(255, 209, 0)<br />
+        White: rgb(255, 255, 255)<br />
+        Red: rgb(200, 16, 46)
       </div>
-      <div id="greenBar">
+      <div id="yellow1">
       </div>
-      <div id="redCrescent">
+      <div id="yellow2">
+      </div>
+      <div id="whiteStar">
       </div>
       <div id="redStar">
       </div>
-
     </div>
   </body>
 </html>

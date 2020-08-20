@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>
-      Algeria
+      Jamaica
     </title>
     <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +10,8 @@
 
       :root {
         --flag-margin: 5vw;
-        --flag-height: 2;
-        --flag-width: 3;
+        --flag-height: 1;
+        --flag-width: 2;
       }
 
       body {
@@ -45,43 +45,38 @@
         max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
         height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
       }
 
       #flagBox > * {
         position: absolute;
       }
 
-      #greenBar {
+      #green {
         height: 100%;
-        width: 50%;
-        background-color: rgb(0, 114, 41);
+        width: 100%;
+        background-color: rgb(0, 150, 69);
+        clip-path: polygon(0% 0%, 50% 50%, 0% 101%, 100% 101%,
+                            50% 50%, 100% 0%, 0% 0%);
       }
 
-      #redCrescent {
-        top: calc(100% * (5 / 20));
-        left: calc(100% * (10 / 30));
-        height: calc(100% * (10 / 20));
-        width: calc(100% * (10 / 30));
-        border-radius: 50%;
-        background-color: rgb(210, 16, 52);
-        mask-image: radial-gradient(circle closest-side at 60.2076%,
-                                    transparent 105.47%,
-                                    rgb(0, 0, 0) 106%);
+      #saltire1 {
+        top: -62.5%;
+        left: calc(100% * (5.5 / 12));
+        height: 225%;
+        width: calc(100% * (1 / 12));
+        background-color: rgb(250, 224, 66);
+        transform: rotateZ(63.435deg);
       }
 
-      #redStar {
-        top: calc(100% * (7.5 / 20));
-        left: calc(100% * (14.522 / 30));
-        height: calc(100% * (5 / 20));
-        width: calc(100% * (5 / 30));
-        clip-path: polygon(50% 0%, 61% 35%,
-                            98% 35%, 68% 57%,
-                            79% 91%, 50% 70%,
-                            21% 91%, 32% 57%,
-                            2% 35%, 39% 35%);
-        background-color: rgb(210, 16, 52);
-        transform: rotateZ(90deg);
+      #saltire2 {
+        top: -62.5%;
+        left: calc(100% * (5.5 / 12));
+        height: 225%;
+        width: calc(100% * (1 / 12));
+        background-color: rgb(250, 224, 66);
+        transform: rotateZ(-63.435deg);
       }
 
     </style>
@@ -89,17 +84,17 @@
   <body>
     <div id="flagBox">
       <div id="deets">
-        Algeria<br />
-        2:3<br />
-        Green: rgb(0, 114, 41)<br />
-        Red: rgb(210, 16, 52)<br />
-        White: rgb(255, 255, 255)
+        Jamaica<br />
+        1:2<br />
+        Green: rgb(0, 150, 69)<br />
+        Black: rgb(0, 0, 0)<br />
+        Yellow: rgb(250, 224, 66)
       </div>
-      <div id="greenBar">
+      <div id="green">
       </div>
-      <div id="redCrescent">
+      <div id="saltire1">
       </div>
-      <div id="redStar">
+      <div id="saltire2">
       </div>
 
     </div>
