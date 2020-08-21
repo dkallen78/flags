@@ -8,12 +8,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
+      :root {
+        --link-color: green;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        cursor: default;
+        font-size: 2rem;
+      }
+
+      header > h1 {
+        margin-top: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+      }
+
+      nav > a {
+        color: black;
+        font-size: 2rem;
+        border-radius: .5rem;
+        padding: .5rem;
+        transition: all 250ms;
+      }
+
+      nav > a:hover, .greenLink {
+        text-shadow: 0 0 .0625rem var(--link-color),
+                      0 0 .125rem var(--link-color),
+                      0 0 .25rem var(--link-color),
+                      0 0 .5rem var(--link-color),
+                      0 0 1rem var(--link-color);
+        color: white;
+      }
+
+      #mapDiv {
+        display: flex;
+        justify-content: center;
+      }
+
+      svg {
+        width: calc(100vw - 5rem);
+        height: calc(100vh - 5rem);
+        max-height: calc(80vh - 5rem);
+      }
+
+      .region {
+        fill: white;
+        stroke: black;
+        stroke-width: .5;
+        transition: all 250ms;
+      }
+
+      .region:hover, .greenLand {
+        fill: var(--link-color);
+      }
+
     </style>
   </head>
   <body>
-    <a href="caribbean/caribbean.html">Caribbean</a>
-    <a href="central-america/central-america.html">Central America</a>
-    <a href="northern-america/northern-america.html">Northern America</a>
-    <a href="south-america/south-america.html">South America</a>
+    <nav>
+      <a href="caribbean/caribbean.html">Caribbean</a>
+      <a href="central-america/central-america.html">Central America</a>
+      <a href="northern-america/northern-america.html">Northern America</a>
+      <a href="south-america/south-america.html">South America</a>
+    </nav>
+    <div>
+      
+
+    </div>
   </body>
 </html>
