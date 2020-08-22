@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>
+      Tanzania
+    </title>
+    <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      :root {
+        --flag-margin: 5vw;
+        --flag-height: 2;
+        --flag-width: 3;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        background-image: linear-gradient(to right, black, gray);
+      }
+
+      #deets {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        margin: 1rem;
+        padding: 1rem;
+        border: .1rem solid black;
+        border-radius: .5rem;
+      }
+
+      #flagBox:hover #deets {
+        display: block;
+      }
+
+      #flagBox {
+        position: relative;
+        max-height: calc(100vh - var(--flag-margin));
+        max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
+        width: calc(100vw - var(--flag-margin));
+        height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
+        background-color: rgb(0, 163, 224);
+        overflow: hidden;
+      }
+
+      #flagBox > * {
+        position: absolute;
+      }
+
+      #goldBend {
+        top: -40.5%;
+        left: calc(100% * (53 / 144));
+        width: calc(100% * (38 / 144));
+        height: 181%;
+        background-color: rgb(255, 205, 0);
+        transform: rotateZ(56.31deg);
+      }
+
+      #blackBend {
+        top: -40.5%;
+        left: calc(100% * (59 / 144));
+        width: calc(100% * (26 / 144));
+        height: 181%;
+        background-color: rgb(0, 0, 0);
+        transform: rotateZ(56.31deg);
+      }
+
+      #greenTriangle {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(52, 178, 51);
+        clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 0% 100%);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="flagBox">
+      <div id="deets">
+        Tanzania<br />
+        2:3<br />
+        Green: rgb(52, 178, 51)<br />
+        Yellow: rgb(255, 205, 0)<br />
+        Black: rgb(0, 0, 0)<br />
+        Blue: rgb(0, 163, 224)
+      </div>
+      <div id="greenTriangle">
+      </div>
+      <div id="goldBend">
+      </div>
+      <div id="blackBend">
+      </div>  
+    </div>
+  </body>
+</html>
