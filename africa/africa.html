@@ -18,13 +18,29 @@
 
       header {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
         cursor: default;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       header > h1 {
-        margin-top: 0;
+        margin: 0;
+        font-size: 4rem;
+      }
+
+      header > a {
+        color: black;
+        transition: all 250ms;
+      }
+
+      header > a:hover {
+        text-shadow: 0 0 .0625rem red,
+                      0 0 .125rem red,
+                      0 0 .25rem red,
+                      0 0 .5rem red,
+                      0 0 1rem red;
       }
 
       nav {
@@ -79,6 +95,7 @@
       <h1>
         Africa
       </h1>
+      <a href="../flags.html">Back</a>
     </header>
     <nav>
       <a href="western-africa/western-africa.html" id="western"
