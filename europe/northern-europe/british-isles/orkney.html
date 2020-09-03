@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>
+      Orkney
+    </title>
+    <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      :root {
+        --flag-margin: 5vw;
+        --flag-height: 8;
+        --flag-width: 11;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        background-image: linear-gradient(to right, black, gray);
+      }
+
+      #deets {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        margin: 1rem;
+        padding: 1rem;
+        border: .1rem solid black;
+        border-radius: .5rem;
+      }
+
+      #deets > div {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+
+      #flagBox:hover #deets {
+        display: block;
+      }
+
+      #flagBox {
+        position: relative;
+        max-height: calc(100vh - var(--flag-margin));
+        max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
+        width: calc(100vw - var(--flag-margin));
+        height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
+        background-color: rgb(210, 43, 45);
+      }
+
+      #flagBox > * {
+        position: absolute;
+      }
+
+      #yellowCross1 {
+        left: calc(100% * (6 / 22));
+        height: 100%;
+        width: calc(100% * (4 / 22));
+        background-color: rgb(255, 255, 25);
+      }
+
+      #yellowCross2 {
+        top: calc(100% * (6 / 16));
+        width: 100%;
+        height: calc(100% * (4 / 16));
+        background-color: rgb(255, 255, 25);
+      }
+
+      #blueCross1 {
+        left: calc(100% * (7 / 22));
+        height: 100%;
+        width: calc(100% * (2 / 22));
+        background-color: rgb(0, 90, 200);
+      }
+
+      #blueCross2 {
+        top: calc(100% * (7 / 16));
+        width: 100%;
+        height: calc(100% * (2 / 16));
+        background-color: rgb(0, 90, 200);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="flagBox">
+      <div id="deets">
+        Orkney<br />
+        8:11<br />
+        Red: rgb(210, 43, 45)<br />
+        Yellow: rgb(255, 255, 25)<br />
+        Blue: rgb(0, 90, 200)
+        <div>
+          <a href="british-isles.html">
+            Back
+          </a>
+        </div>
+      </div>
+      <div id="yellowCross1">
+      </div>
+      <div id="yellowCross2">
+      </div>
+      <div id="blueCross1">
+      </div>
+      <div id="blueCross2">
+      </div>
+    </div>
+  </body>
+</html>

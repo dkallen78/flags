@@ -1,3 +1,8 @@
+:root {
+  --blue-280: rgb(0, 36, 125);
+  --yellow-109: rgb(247, 212, 23);
+}
+
 body {
   display: flex;
   justify-content: center;
