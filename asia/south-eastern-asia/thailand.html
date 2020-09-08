@@ -1,9 +1,9 @@
 <html>
   <head>
     <title>
-      Laos
+      Thailand
     </title>
-    <link rel="stylesheet" type="text/css" href="eulerStyle.css" />
+    <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -52,52 +52,36 @@
         max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
         height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
-        background-color: rgb(206, 17, 38);
+        background-image: linear-gradient(to bottom,
+                                          rgb(165, 25, 49) 16.6666%,
+                                          rgb(244, 245, 248) 16.6666% 33.3333%,
+                                          rgb(45, 42, 74) 33.3333% 66.6666%,
+                                          rgb(244, 245, 248) 66.6666% 83.3333%,
+                                          rgb(165, 25, 49) 83.3333%);
       }
 
-      #blueBand {
+      #flagBox > * {
         position: absolute;
-        top: 25%;
-        height: 50%;
-        width: 100%;
-        background-color: rgb(0, 40, 104);
       }
-
-      #whiteCircle {
-        position: absolute;
-        height: 40%;
-        width: 26.6666%;
-        top: 30%;
-        left: 36.6666%;
-        background-color: white;
-        border-radius: 50%;
-       }
-
 
     </style>
   </head>
   <body>
-
     <div id="flagBox">
       <div id="deets">
-        Laos<br />
+        Thailand<br />
         2:3<br />
-        Red: rgb(206, 17, 38)<br />
-        Blue: rgb(0, 40, 104)<br />
-        White: rgb(255, 255, 255)
+        Red: rgb(165, 25, 49)<br />
+        White: rgb(244, 245, 248)<br />
+        Blue: rgb(45, 42, 74)<br />
         <div>
           <a href="south-eastern-asia.html">
             Back
           </a>
         </div>
       </div>
-      <div id="blueBand">
-      </div>
-      <div id="whiteCircle">
+      <div>
       </div>
     </div>
   </body>
-  <script>
-
-  </script>
 </html>

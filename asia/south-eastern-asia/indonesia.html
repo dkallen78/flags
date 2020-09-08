@@ -25,7 +25,6 @@
       }
 
       #deets {
-        display: none;
         position: absolute;
         z-index: 2;
         background-color: white;
@@ -33,10 +32,18 @@
         padding: 1rem;
         border: .1rem solid black;
         border-radius: .5rem;
+        filter: opacity(0);
+        transition: all 250ms;
+      }
+
+      #deets > div {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.25rem;
       }
 
       #flagBox:hover #deets {
-        display: block;
+        filter: opacity(1);
       }
 
       #flagBox {
@@ -65,6 +72,11 @@
         2:3<br />
         Red: rgb(239, 51, 64)<br />
         White: rgb(255, 255, 255)
+        <div>
+          <a href="south-eastern-asia.html">
+            Back
+          </a>
+        </div>
       </div>
       <div id="redBand">
       </div>
