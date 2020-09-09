@@ -52,14 +52,9 @@
         max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
         height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
-        background-color: white;
-      }
-
-      #redBand {
-        position: absolute;
-        height: 50%;
-        width: 100%;
-        background-color: rgb(239, 51, 64);
+        background-image: linear-gradient(to bottom,
+                                          rgb(239, 51, 64) 50%,
+                                          rgb(255, 255, 255) 50%);
       }
 
     </style>
@@ -77,8 +72,6 @@
             Back
           </a>
         </div>
-      </div>
-      <div id="redBand">
       </div>
     </div>
   </body>
