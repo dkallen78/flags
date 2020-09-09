@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>
-      Honduras
+      Myanmar
     </title>
     <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -10,8 +10,8 @@
 
       :root {
         --flag-margin: 5vw;
-        --flag-height: 1;
-        --flag-width: 2;
+        --flag-height: 2;
+        --flag-width: 3;
       }
 
       body {
@@ -36,8 +36,14 @@
         transition: all 250ms;
       }
 
+      #deets > div {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+
       #flagBox:hover #deets {
-        filtr: opacity(1);
+        filter: opacity(1);
       }
 
       #flagBox {
@@ -46,52 +52,27 @@
         max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
         width: calc(100vw - var(--flag-margin));
         height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
-        background-color: rgb(26, 117, 207);
+        background-image: linear-gradient(to bottom,
+                                          rgb(254, 203, 0) 33.3333%,
+                                          rgb(52, 178, 51) 33.3333% 66.6666%,
+                                          rgb(234, 40, 57) 66.6666%);
       }
 
-      #whiteBand {
+      #flagBox > * {
         position: absolute;
-        top: 33.3333%;
-        height: 33.3333%;
-        width: 100%;
+      }
+
+      #star {
+        top: calc(100% * (1 / 6));
+        left: calc(100% * (2.5 / 9));
+        height: calc(100% * (4 / 6));
+        width: calc(100% * (4 / 9));
+        clip-path: polygon(50% 0%, 63% 38%,
+                            100% 38%, 69% 59%,
+                            82% 100%, 50% 75%,
+                            18% 100%, 31% 59%,
+                            0% 38%, 37% 38%);
         background-color: rgb(255, 255, 255);
-      }
-
-      .star {
-        position: absolute;
-        height: 11.1111%;
-        width: 5.5555%;
-        clip-path: polygon(50% 0%, 61% 35%,
-                            98% 35%, 68% 57%,
-                            79% 91%, 50% 70%,
-                            21% 91%, 32% 57%,
-                            2% 35%, 39% 35%);
-        background-color: rgb(26, 117, 207);
-      }
-
-      #star1 {
-        top: 44.4444%;
-        left: 47.2222%;
-      }
-
-      #star2 {
-        top: 36.1111%;
-        left: 30.5555%;
-      }
-
-      #star3 {
-        top: 52.7777%;
-        left: 30.5555%;
-      }
-
-      #star4 {
-        top: 36.1111%;
-        left: 63.8888%;
-      }
-
-      #star5 {
-        top: 52.7777%;
-        left: 63.8888%;
       }
 
     </style>
@@ -99,21 +80,19 @@
   <body>
     <div id="flagBox">
       <div id="deets">
-        Honduras<br />
-        1:2<br />
-        Blue: rgb(26, 117, 207)
+        Myanmar<br />
+        2:3<br />
+        Yellow: rgb(254, 203, 0)<br />
+        Green: rgb(52, 178, 51)<br />
+        Red: rgb(234, 40, 57)<br />
+        White: rgb(255, 255, 255)
+        <div>
+          <a href="south-eastern-asia.html">
+            Back
+          </a>
+        </div>
       </div>
-      <div id="whiteBand">
-      </div>
-      <div class="star" id="star1">
-      </div>
-      <div class="star" id="star2">
-      </div>
-      <div class="star" id="star3">
-      </div>
-      <div class="star" id="star4">
-      </div>
-      <div class="star" id="star5">
+      <div id="star">
       </div>
     </div>
   </body>
