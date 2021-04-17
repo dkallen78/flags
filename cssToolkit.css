@@ -2,9 +2,11 @@
   --cream-7402: rgb(237, 222, 156);
   --blue-280: rgb(0, 36, 125);
   --blue-286: rgb(0, 51, 171);
+  --blue-293: rgb(0, 61, 165);
   --blue-300: rgb(0, 110, 199);
   --blue-306: rgb(0, 184, 224);
   --green-347: rgb(0, 153, 89);
+  --green-355: rgb(0, 151, 57);
   --green-356: rgb(0, 115, 54);
   --green-360: rgb(108, 194, 74);
   --green-362: rgb(41, 153, 38);
@@ -24,6 +26,7 @@ body {
   overflow: hidden;
   margin: 0;
   background-image: linear-gradient(to right, black, gray);
+
 }
 
 #deets {
@@ -39,6 +42,14 @@ body {
 
 #flagBox:hover #deets {
   display: block;
+}
+
+#flagBox {
+  background-image: linear-gradient(to right,
+                                    rgb(0, 32, 91) 33.3333%,
+                                    rgb(252, 205, 0) 33.3333% 66.6666%,
+                                    rgb(200, 16, 46) 66.6666%);
+
 }
 
 /*
