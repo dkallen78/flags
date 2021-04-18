@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>
+      Chile
+    </title>
+    <!--<link rel="stylesheet" type="text/css" href="eulerStyle.css" />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      :root {
+        --flag-margin: 5vw;
+        --flag-height: 2;
+        --flag-width: 3;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        background-image: linear-gradient(to right, black, gray);
+      }
+
+      #deets {
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        margin: 1rem;
+        padding: 1rem;
+        border: .1rem solid black;
+        border-radius: .5rem;
+        filter: opacity(0);
+        transition: all 250ms;
+      }
+
+      #deets > div {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+
+      #flagBox:hover #deets {
+        filter: opacity(1);
+      }
+
+      #flagBox {
+        position: relative;
+        max-height: calc(100vh - var(--flag-margin));
+        max-width: calc((100vh - var(--flag-margin)) * (var(--flag-width) / var(--flag-height)));
+        width: calc(100vw - var(--flag-margin));
+        height: calc((100vw - var(--flag-margin)) * (var(--flag-height) / var(--flag-width)));
+        background-image: linear-gradient(to bottom,
+                                          rgb(255, 255, 255) 50%,
+                                          rgb(213, 43, 30) 50%);
+      }
+
+      #flagBox > * {
+        position: absolute;
+      }
+
+      #canton {
+        top: 0%;
+        height: calc(100% * (1 / 2));
+        width: calc(100% * (1 / 3));
+        background-color: rgb(0, 57, 166);
+      }
+
+      #star {
+        top: calc(100% * (1 / 8));
+        left: calc(100% * (1 / 12));
+        height: calc(100% * (1 / 4));
+        width: calc(100% * (1 / 6));
+        clip-path: polygon(50% 0%, 61% 35%,
+                            98% 35%, 68% 57%,
+                            79% 91%, 50% 70%,
+                            21% 91%, 32% 57%,
+                            2% 35%, 39% 35%);
+        background-color: rgb(255, 255, 255);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="flagBox">
+      <div id="deets">
+        Chile<br />
+        2:3<br />
+        Blue: rgb(0, 57, 166)<br />
+        White: rgb(255, 255, 255)<br />
+        Red: rgb(213, 43, 30)
+        <div>
+          <a href="south-america.html">
+            Back
+          </a>
+        </div>
+      </div>
+      <div id="canton">
+      </div>
+      <div id="star">
+      </div>
+    </div>
+  </body>
+</html>
